@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+    <meta name="copyright" content="The Game Review by Carlos Arce">
+    <meta name="keywords" content="Photo Gallery, Game Images, Video Game Review, Web Design, Carlos Arce, CMST 386.">
+        <meta name=" description"
+        content="This page features a photo gallery for The Video Game Review, an online game review web site by Carlos Arce.">
+    <meta name="author" content="Carlos Arce">
+    <title>Photo Gallery - The Video Game Review by Carlos Arce</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="less.js"></script>
+    <link href="../styles.less" rel="stylesheet/less" type="text/css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="icon" href="../images/favicon.png">
+    </head>
+    
+    <body>
+    
+        <header>
+            <h2>The Video Game Review</h2>
+            <h4>Quick Reviews on the Go</h4>
+            <div class=topnav id="myTopnav">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="articles.html">Articles</a>
+                    <a class="active" href="images.html">Images</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Reviews
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="dragonball.html">Dragon Ball Fighter Z</a>
+                            <a href="finalfantasy.html">Final Fantasy XV</a>
+                            <a href="hollowknight.html">Hollow Knight</a>
+                            <a href="legendOfZelda.html">Legend of Zeld B.O.T.W.</a>
+                            <a href="monsterhunter.html">Monster Hunter</a>
+                            <a href="tekken.html">Tekken 7</a>
+                        </div>
+                    </div>
+                    <a href="form.html">Contact Me</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <div class="row">
+
+            <div class="left-column">
+                <div class="card">
+                    <div class="container">
+                        <hr>
+                        <h3>Dragon Ball Fighter Z</h3>
+                        <img src="../images/dbzfighter.jpg" alt="Dragon Ball with Dragon Ball Fighter Z logo." class="center">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="left-column">
+                <div class="card">
+                    <div class="container">
+                        <hr>
+                        <h3>Final Fantasy XV</h3>
+                        <img src="../images/finalfantasy.png" alt="Final Fantasy 15. Main characters of Final Fantasy XV." class="center">
+                    </div>
+                </div>
+            </div>
+
+            <div class="left-column">
+                <div class="card">
+                    <div class="container">
+                        <hr>
+                        <h3>Hollow Knight</h3>
+                        <img src="../images/hollowknight.jpg" alt="The knight from Hollow Knight." class="center">
+                    </div>
+                </div>
+            </div>
+
+            <div class="left-column">
+                <div class="card">
+                    <div class="container">
+                        <hr>
+                        <h3>Legen of Zelda B.O.T.W.</h3>
+                        <img src="../images/breathofthewild.jpg" alt="Grassy knoll with Legend of Zelda Breath of the Wild logo." class="center">
+                    </div>
+                </div>
+            </div>
+
+            <div class="left-column">
+                <div class="card">
+                    <div class="container">
+                        <hr>
+                        <h3>Monster Hunter World</h3>
+                        <img src="../images/mhw.jpg" alt="Monster Hunter World release poster with Zorah Magadaros." class="center">
+                    </div>
+                </div>
+            </div>
+
+            <div class="left-column">
+                <div class="card">
+                    <div class="container">
+                        <hr>
+                        <h3>Tekken 7</h3>
+                        <img src="../images/tekken7.jfif" alt="Image of Tekken 7 characters with the Tekken 7 logo." class="center">
+                    </div>
+                </div><button onclick="topFunction()" id="top-button" title="Go to top">Top</button>
+            </div>
+            
+        </div>
+    
+    
+    <footer>
+    
+        <p>&copy; Carlos Arce-Mercado 2018
+            <script>new Date().getFullYear() > 2010 && document.write("- " + new Date().getFullYear());
+            </script> <br> Contact Me:
+            <script>
+                emailMe = ('&#97;rc' + 'e' + '.code' + '&commat;' + 'g' + 'm' + 'ail.&#99;om')
+                document.write('<a href="mailto:' + emailMe + '">' + emailMe + '</a>')
+            </script>.</p>
+        <a href="sitemap.txt" class="button" target="_blank">Sitemap</a>
+        <a href="privacyPolicy.html" class="button" target="_blank">Privacy Policy</a>
+        <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnova.umuc.edu%2F~ct386a14%2FFinalProposal%2Fhtml%2Fimages.html"
+            class="button" target="_blank">Valid HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fnova.umuc.edu%2F~ct386a14%2FFinalProposal%2Fhtml%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"
+            class="button" target="_blank">Valid CSS</a>
+    </footer>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+</script>
+
+</body>
+
+</html>

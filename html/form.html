@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+    <meta name="copyright" content="The Game Review by Carlos Arce">
+    <meta name="keywords" content="Contact Form, The Video Game Review, Video Game Reviews, Web Design, Carlos Arce, CMST 386.">
+    <meta name=" description"
+        content="This page features a contact form to reach Carlos Arce, creator of The Video Game Review.">
+    <meta name="author" content="Carlos Arce">
+    <title>Contact Form - The Video Game Review by Carlos Arce</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="less.js"></script>
+    <link href="../styles.less" rel="stylesheet/less" type="text/css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="icon" href="../images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <h2>The Video Game Review</h2>
+        <h4>Quick Reviews on the Go</h4>
+        <div class=topnav id="myTopnav">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="articles.html">Articles</a>
+                <a href="images.html">Images</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Reviews
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="dragonball.html">Dragon Ball Fighter Z</a>
+                        <a href="finalfantasy.html">Final Fantasy XV</a>
+                        <a href="hollowknight.html">Hollow Knight</a>
+                        <a href="legendOfZelda.html">Legend of Zeld B.O.T.W.</a>
+                        <a href="monsterhunter.html">Monster Hunter</a>
+                        <a href="tekken.html">Tekken 7</a>
+                    </div>
+                </div>
+                <a class="active" href="form.html">Contact Me</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="row">
+
+        <div class="article-wall"> <br> </div>
+
+        <div class="article-column">
+            <div class="card">
+                <div class="content">
+                    <h2>Contact Me</h2>
+                    <hr>
+                    <h5>Feel free to contact me via email.</h5>
+                    <hr>
+                    <div class="container">
+                            <img src="../images/me.jpg" alt="Super Sayan Goku in Dragon Ball Fighter Z."
+                                class="center">
+                        <h3>Carlos Arce - The Video Game Review</h3>
+                    </div>
+                    <p class="center">I'm a part-time student at University of Maryland University College - Adelphi Campus. I work full-time during the day,
+                        so all of my classes are online. My goal is to graduate from U.M.U.C and change careers, both by the end of this year.
+                    </p>
+                    <div class="container">
+                        <h3>Email Me</h3>
+                    <form name="myForm" action="mailto:&#97;rce.code&commat;gmail.&#99;om" onsubmit="return validateForm()" method="post">
+                        Name: <input type="text" name="fname" required> <br>
+                        Email: <input type="email" name="userEmail" required> <br>
+                        Phone: <input type="text" name="userPhone"> <br>
+                        Role: <input type="checkbox" name="userRole" value="recruiter">Recruiter
+                        <input type="checkbox" name="userRole" value="Student">Student <br>
+                        Subject: <select>
+                            <option value="jobOffer">Job Offer</option>
+                            <option value="hangOut">Hang Out</option>
+                            <option value="netWord">Networking</option>
+                        </select> <br>
+                        <input type="submit" value="Submit">
+                    </form>
+                    </div>
+                    <br>
+                </div>
+                <hr> <br>
+            </div>
+        </div>
+        <div class="article-wall"> <br> </div>
+    </div>
+
+    <footer>
+        <p>&copy; Carlos Arce-Mercado 2018
+            <script>new Date().getFullYear() > 2010 && document.write("- " + new Date().getFullYear());
+            </script> <br> Contact Me:
+            <script>
+                emailMe = ('&#97;rc' + 'e' + '.code' + '&commat;' + 'g' + 'm' + 'ail.&#99;om')
+                document.write('<a href="mailto:' + emailMe + '">' + emailMe + '</a>')
+            </script>.</p>
+        <a href="sitemap.txt" class="button" target="_blank">Sitemap</a>
+        <a href="privacyPolicy.html" class="button" target="_blank">Privacy Policy</a>
+        <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fnova.umuc.edu%2F~ct386a14%2FFinalProposal%2Fhtml%2Fform.html"
+            class="button" target="_blank">Valid HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fnova.umuc.edu%2F~ct386a14%2FFinalProposal%2Fhtml%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"
+            class="button" target="_blank">Valid CSS</a>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+            function topFunction() {
+                    document.body.scrollTop = 0; // For Safari
+                    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                }
+            function validateForm() {
+                    var x = document.forms["myForm"]["userName"&&"userEmail"].value;
+                    if (x == "") {
+                        alert("All Sections Must Be Completed*");
+                        return false;
+                    }
+                }
+    </script>
+
+</body>
+
+</html>
