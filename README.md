@@ -8,7 +8,6 @@
 
 ## Information
 
-* Information
 This website showcases my Web Design skills. HTML, CSS, and JavaScript is used to make the website operational. The website was made for UMUC class CMST 386. It contains a game review website with responsive web content.
 
 ## Code
