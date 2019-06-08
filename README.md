@@ -1,4 +1,4 @@
-# Game-Review-Site
+# Game Review Site
 
 ## Table of Contents
 
