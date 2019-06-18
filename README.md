@@ -28,3 +28,4 @@ Used to create a more responsive web experience.
 
 * Visual Studio Code
 * W3Schools
+* Font from 'https://fonts.googleapis.com/css?family=Montserrat|ZCOOL+QingKe+HuangYou'
